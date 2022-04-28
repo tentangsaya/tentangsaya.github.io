@@ -1,14 +1,55 @@
 <html>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <head>
         <meta charset="utf-8">
         <title>My CV</title>
 
         <link rel="stylesheet" type="text/css" href="style_cv.css">
         <style type="text/css">
+
+        :root{
+            --main-color:#d3ad7f;
+            --black:#13131a;
+            --bg:#010103;
+            --border:.1rem solid rgba(255,255,255,.3);
+        }
                       
           body{
                 padding: 15px;
                 color: aliceblue;
+            }
+
+            .header{
+                background: rgb(43, 43, 43);
+                align-items: center;
+                top: 0; left: 0; right: 0;
+                border-width:medium;
+                border-bottom:var(--border);
+                z-index:auto;
+                position: inherit;
+                align-content: space-between;
+            }
+
+            .header .jdl{
+                color: var(--main-color);
+                font-size: 35px;
+                font-weight: bold;
+                text-align: center;
+                margin: 0;
+                margin-bottom: 0.5rem;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            #home-btn{
+                color: #fff;
+                cursor: pointer;
+                font-size: 2rem;
+                margin-left: 0.8rem;
+                margin-top: 0.8rem;
+            }
+
+            #home-btn:hover{
+                color: var(--main-color);
             }
 
             h1{
@@ -89,7 +130,11 @@
     </head>
     <body style="background: rgb(31, 31, 31); font-family: Georgia, 'Times New Roman', Times, serif;">
        
-            
+    <header class="header">
+        <a href="https://kakaelkitchen.github.io">
+            <div class="fas fa-home" id="home-btn"></div>
+        </a> <p class="jdl">TENTANG SAYA</p>
+    </header>
             <h1>CURICULUM VITAE</h1>
         
             <img src="https://i.postimg.cc/pXh9nFJ8/empat.jpg" width="100px" class="rounded-square" style="display: block; margin: auto;" id="profil">
